@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Redirect all paths to index.html for SPA client-side routing
+      // GitHub Pages serves this file for any 404, so we use it as a catch-all
+      var path = window.location.pathname + window.location.search + window.location.hash;
+      window.location.replace('/' + '?p=' + encodeURIComponent(path));
+    </script>
+  </head>
+  <body></body>
+</html>

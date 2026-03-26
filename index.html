@@ -5,6 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="/nmwl.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NMWL - Hamar</title>
+    <script>
+      // Restore SPA route from 404.html redirect
+      (function() {
+        var p = new URLSearchParams(window.location.search).get('p');
+        if (p) window.history.replaceState(null, '', p);
+      })();
+    </script>
     <script type="module" crossorigin src="/assets/index-Dj7mtJQT.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-MeIZ6wa1.css">
   </head>
