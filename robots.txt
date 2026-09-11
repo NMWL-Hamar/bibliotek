@@ -1,0 +1,5 @@
+# Privat klubbibliotek – ingen indeksering.
+# Meta-taggen noindex i index.html er den som faktisk avindekserer;
+# denne filen stopper veloppdragne crawlere fra å hente sidene i det hele tatt.
+User-agent: *
+Disallow: /
